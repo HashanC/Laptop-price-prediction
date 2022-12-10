@@ -6,7 +6,7 @@ import numpy as np
 app = Flask(__name__)
 
 def prediction(lst):
-    filename = 'model/pickle_file_iro.pickle'
+    filename = 'model-pickle file/pickle_file_iro.pickle'
     with open(filename, 'rb') as file:
         model = pickle.load(file)
     pred_value = model.predict([lst])
